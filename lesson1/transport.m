@@ -1,16 +1,16 @@
 //
-//  AppDelegate.h
+//  transport.m
 //  lesson1
 //
 //  Created by Иван Мараховка on 24.10.13.
 //  Copyright (c) 2013 Иван Мараховка. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "transport.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@implementation transport
+-(void)start{
 
-
-@property (strong, nonatomic) UIWindow *window;
-
+    NSLog(@"srarting");
+}
 @end

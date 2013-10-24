@@ -19,6 +19,7 @@
 		3F15B172181940FA008EF1F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F15B15A181940FA008EF1F3 /* UIKit.framework */; };
 		3F15B17A181940FA008EF1F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F15B178181940FA008EF1F3 /* InfoPlist.strings */; };
 		3F15B17C181940FA008EF1F3 /* lesson1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15B17B181940FA008EF1F3 /* lesson1Tests.m */; };
+		3F15B1C2181952CD008EF1F3 /* transport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F15B1C1181952CD008EF1F3 /* transport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		3F15B177181940FA008EF1F3 /* lesson1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lesson1Tests-Info.plist"; sourceTree = "<group>"; };
 		3F15B179181940FA008EF1F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F15B17B181940FA008EF1F3 /* lesson1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lesson1Tests.m; sourceTree = "<group>"; };
+		3F15B1C0181952CD008EF1F3 /* transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport.h; sourceTree = "<group>"; };
+		3F15B1C1181952CD008EF1F3 /* transport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				3F15B166181940FA008EF1F3 /* AppDelegate.m */,
 				3F15B168181940FA008EF1F3 /* Images.xcassets */,
 				3F15B15D181940FA008EF1F3 /* Supporting Files */,
+				3F15B1C0181952CD008EF1F3 /* transport.h */,
+				3F15B1C1181952CD008EF1F3 /* transport.m */,
 			);
 			path = lesson1;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F15B167181940FA008EF1F3 /* AppDelegate.m in Sources */,
+				3F15B1C2181952CD008EF1F3 /* transport.m in Sources */,
 				3F15B163181940FA008EF1F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,10 +365,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lesson1/lesson1-Prefix.pch";
 				INFOPLIST_FILE = "lesson1/lesson1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,10 +380,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lesson1/lesson1-Prefix.pch";
 				INFOPLIST_FILE = "lesson1/lesson1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,6 +451,7 @@
 				3F15B181181940FA008EF1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F15B182181940FA008EF1F3 /* Build configuration list for PBXNativeTarget "lesson1Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +460,7 @@
 				3F15B184181940FA008EF1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "transport.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    transport* marshrutka = [[transport  alloc] init];
+    [marshrutka start];
+    
     return YES;
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
